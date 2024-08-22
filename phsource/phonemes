@@ -1952,6 +1952,9 @@ include ph_catalan_va
 phonemetable ca-ba ca
 include ph_catalan_ba
 
+phonemetable ca-al ca
+include ph_catalan_al
+
 phonemetable an es
 include ph_aragon
 

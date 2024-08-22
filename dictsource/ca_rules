@@ -7,6 +7,8 @@
 //      ?2 general western. north-western specific characteristics 
 //      ?3 valencian specific characteristics (valencian is 2+3. 3 overwrites 2)
 //      ?4 balearic specific characteristics (balearic is 1+4. 4 overwrites 1)
+//      ?5 algherese specific characteristics (algherese is 2+3+5. , but 5 overwrites the others) It inherits from Valencian because they have the same E/e, b/v and Z/S systems.
+
 // We have tried to make the rules and lists of transcriptions as general as posible, 
 // and to deal with the particularities of each accent (for instance, unestressed vowels and [v] in Central accent) 
 // in the definition of the phonemes (ph_catalan* files), when it has been feasible to do so.
