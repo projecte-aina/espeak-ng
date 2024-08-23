@@ -113,6 +113,8 @@
 ?4 Aig_) c (L01    ts
 ?4 Atx_) c (L01    ts
 
+?5       c (L01    ts    // (cirera)
+
 .group ç
         ç (_       =s    // (llaç)
   L05J) ç         s      
@@ -129,7 +131,9 @@
 ?4   A) ç (_x     t     // dissimilation (llaç xarop)
 ?4   A) ç (_j     d     // dissimilation (llaç joc)
 ?4   A) ç (_gL01  d     // dissimilation (llaç gerro)
- 
+
+?5      ç         ts
+
 .group d
         d          d    
      _) d' (P2     d    // apostrophe
@@ -137,7 +141,8 @@
   _nor) d (-       t
 ?3  _a) d (sC           // (adscriure)
 ?4  _a) d (sC
-
+?5   A) d (A       **   // (roda)   
+?5      dr         R
 
 .group e
         e          e
@@ -253,6 +258,7 @@
 
 ?3   @) eix (_     iS   // terminació verbs incoatius (afegeix)
 ?3   @) eix (@     iS   // terminació verbs incoatius (afegeix)
+?3  @t) eix (_     ejS   // terminació verbs incoatius (afegeix)
 
 ?4   @) e (ix_+    @    
 ?4   C) e (ix      e     
@@ -294,6 +300,9 @@
 ?4      e (des_+   @
 ?4      e (ga_+    @
 ?4      e (gues_+  @
+
+?5      eix (A+     iS   // rule to control e elision when unestressed
+?5      eix (en_+   ejS   // rule to control e elision when unestressed
  
     // prefixes with secondary stress
      _) e (ntreA   ,e   // (entreacte)
@@ -581,9 +590,17 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 
 ?4      lt (_      lt   // (alt)
 ?4      ld (_      ld   // (alt)
-?4   _e) ls (_A   ddz   // dissimilation in balearic (els arbres)
-?4   _e) ls (_hA   ddz  // dissimilation in balearic (els homes)
+?4  _e) ls (_A     ddz  // dissimilation in balearic (els arbres)
+?4  _e) ls (_hA    ddz  // dissimilation in balearic (els homes)
 
+?5    A) l (A      **
+?5   A_) l (A      **
+?5    A) l (_A     **
+?5  L13) l (A      **   // plosives (pla)
+?5    f) l (A      **
+
+?5       ll (K     l    // despalatalització final de paraula o de síl·laba
+?5       ll (_A    l^   // (coll avall)
 .group m
         m          m
      _) m' (P2     m    // apostrophe
@@ -686,6 +703,9 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 
 ?3      nn         n    // (ennuvolat)
 ?3  _i) nn         nn   // (innecessari)
+
+?5      ny (K      n    // despalatalització final de paraula o de síl·laba
+?5      ny (_A     nl^  // (any avall)
           
             // sant, cent, vint
   _L25) nt (_A     nt   // pronounce final t if followed by a vowel
@@ -843,7 +863,8 @@ catalan) o (@      o2
      C) r (A       **   // (groc)
 ?3   A) r (C       **   // (exercici)
 ?4   A) r (C       **   // (exercici)
-          
+?5   A) r (C+      l    // (Barcelona)
+
      l) r (A       R    // (colrat)
      m) r (A       R    // (somrient)
      n) r (A       R    // (enrere)
@@ -972,6 +993,8 @@ _contra) r (i      **   // (contrari)
 ?4    A)   rt (_C$w_alt4     **    // (sort)
 ?4    A)   rd (_C$w_alt4     **    // (sord)
 
+?5    A)   rs        lts
+
 .group s
         s          s
      _) s' (P2     s    // apostrophe
@@ -1079,7 +1102,8 @@ _contra) r (i      **   // (contrari)
 ?3      tll        l^   // assimilation (espatlla)
 ?3      tl         ll   // ametla, atlas
 ?4      tll        ll   // assimilation (espatlla)
-
+?5      tll (++    tl   // (espatlla)
+        
         tm         mm	// gemination (setmana)
    _so) tm         dm   // avoid gemination (sotmès)
 ?3      tm         m	// gemination (setmana)

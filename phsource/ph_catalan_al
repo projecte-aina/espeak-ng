@@ -22,7 +22,8 @@ phoneme e
   vwl starttype #e endtype #e
   length 170
   IF thisPh(isUnstressed) THEN
-        ChangePhoneme(a)
+    ChangePhoneme(a)
+    
   ENDIF
   FMT(vowel/e)
 endphoneme
@@ -32,7 +33,7 @@ phoneme E
   vwl starttype #e endtype #e
   length 180
   IF thisPh(isUnstressed) THEN
-     ChangePhoneme(@)
+     ChangePhoneme(a)
   ENDIF
   FMT(vowel/e_mid)
 endphoneme
