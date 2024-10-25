@@ -7,6 +7,9 @@
 //      ?2 general western. north-western specific characteristics 
 //      ?3 valencian specific characteristics (valencian is 2+3. 3 overwrites 2)
 //      ?4 balearic specific characteristics (balearic is 1+4. 4 overwrites 1)
+//      ?5 algherese specific characteristics (algherese is 2+3+5. , but 5 overwrites the others) It inherits from Valencian because they have the same E/e, b/v and Z/S systems.
+//      ?6 rossellonese (septentrional) specific characteristics (rossellonese is 1+6)
+
 // We have tried to make the rules and lists of transcriptions as general as posible, 
 // and to deal with the particularities of each accent (for instance, unestressed vowels and [v] in Central accent) 
 // in the definition of the phonemes (ph_catalan* files), when it has been feasible to do so.
@@ -217,6 +220,7 @@ _4X	kwa**'anta
 _5X	sinkw'anta
 _6X	seS'anta
 ?3 _6X	sejS'anta
+?6 _6X  SiS'anta
 _7X	set'anta
 _8X	bujt'anta
 ?3 _8X	ujt'anta
@@ -729,6 +733,9 @@ seva        s'eva       $nounf
 ?2 meva     m'ewa       $nounf
 ?2 teva     t'ewa       $nounf
 ?2 seva     s'ewa       $nounf
+?6 meva     m'ewa       $nounf
+?6 teva     t'ewa       $nounf
+?6 seva     s'ewa       $nounf
 meua        m'ewa       $nounf
 teua        t'ewa       $nounf
 seua        s'ewa       $nounf
@@ -819,6 +826,7 @@ des des
 ?4  pes $u pedz 
 
 amb $u	
+?6 amb  ambe
 entre	
 
 // 1.4.4 Conjunctions
@@ -3033,6 +3041,7 @@ colomes	$alt1
 coloms	$alt1
 còlon	$alt1
 còlons	$alt1
+color	$alt1
 colps	$alt1
 colze	$alt1
 colzes	$alt1
@@ -3208,6 +3217,7 @@ doll	$alt1
 dolla	$alt1
 dolles	$alt1
 dolls	$alt1
+dolorós $alt1
 dom	$alt1
 doma	$alt1
 domes	$alt1
@@ -6893,6 +6903,11 @@ Xóvar	$alt4
 Xóvars	$alt4
 zíngar	$alt4
 zíngars	$alt4
+?6 madur	$alt4
+?6 madurs	$alt4
+?6 segur	$alt4
+?6 segurs	$alt4
+?6 apar 	$alt4 // v. aparer
 
 // 2.2.1.3 Final t/d are not silent (alt4)
 absolt	$alt4
@@ -6905,7 +6920,7 @@ port	$alt4
 indult	$alt4
 cobalt 	$alt4
 sord	$alt4 $alt1
-sort	$alt4 $alt1
+sort	$alt4 
 suport  $alt4
 mort	$alt4
 tard	$alt4
@@ -15768,6 +15783,130 @@ tens     t'ens   $verb
 ?5 de       $u de2 
 ?5 on       ond
 ?5 quan     quand
+?6 estiu    ist'iw
+?6 aigua    aiga
+?6 aigües   aiges
+?6 gaires   gwaj**es
+?6 flor     flu
+?6 flors    flus
+?6 hores    u**es
+?6 hora     u**a
+?6 roig     RutS
+?6 rojos    RuZos
+?6 olla     ul^a
+?6 olles    ul^es
+?6 tro      t**u
+?6 bo       bu
+?6 teatre   tej'at**e
+?6 idea     id'eja
+?6 gelea    Zeleja
+?6 teatres  tej'at**es
+?6 idees    id'ejes
+?6 gelees   Zelejes
+?6 fusell   fuzil^
+?6 fusells  fuzil^s
+?6 també    tab'e
+?6 arbre    ajb**e
+?6 arbres   ajb**es
+?6 ahir     a'iRt
+?6 dir      d'i**a
+?6 dur      d'u**a
+?6 ser      s'e**a
+?6 sent-ho  sent'u     
+?6 boix     b'oS
+?6 esquix   esk'iS
+?6 guix     g'iS
+?6 moix     m'oS
+?6 aqueix   ak'eS
+?6 mateix   mat'eS
+?6 esquaix  eskw'aS
+?6 flaix    fl'aS
+?6 haixix   aS'iS
+?6 beix     b'eS@
+?6 biaix    bi'aS@
+?6 brioix   b**i'oS@
+?6 contrabaix   cont**ab'aS@
+?6 malgaix  malg'aS@
+?6 peluix   pel'uS@
+?6 xampany  Samp'an^@
+?6 capsa    k'adda
+?6 capses   k'addes
+?6 capsal   kadd'al
+?6 capsals  kadd'als
+?6 dissabte dis'adda
+?6 dissabtes dis'addes
+?6 net      n'et
+?6 neta     n'eta
+?6 nets     n'ets
+?6 netes    n'etes
+?6 florit   flo**'it
+?6 florir   flo**'i
+?6 (enmig de)       emm'id||de
+?6 (entremig de)    entrem'id||de
+?6 gírgola     ZiRg'ol
+?6 àliga       'alga
+?6 Bàrbara     b'aRba
+?6 càmfora     c'amfra
+?6 màrfega     m'aRfa
+?6 pólvora     p'olv**a
+?6 tòfona      t'Ofa
+?6 tórtora     t'oRt**a
+?6 alfàbrega   alf'aga
+?6 vànova      v'anu
+?6 llúgubre    l^ug'ub**e
+?6 múrgola     ma**ig'ula
+?6 llàstima    l^'astim
+?6 llàgrima    l^ag**'ama
+?6 ànima       aima
+?6 sèmola      semola
+?6 màximum     macsimum
+?6 època       epoca
+?6 mètode      metode
+?6 síl·laba    sillabe
+?6 tómbola     tombol'a
+?6 brúixola    brusola
+?6 sàpiga      sapigi
+?6 pijama      piZam'a
+?6 gírgoles     ZiRg'ols
+?6 àliges       'algas
+?6 Bàrbares     b'aRbas
+?6 càmfores     c'amfras
+?6 màrfeges     m'aRfas
+?6 pólvores     p'olv**as
+?6 tòfones      t'Ofas
+?6 tórtores     t'oRt**as
+?6 alfàbreges   alf'agas
+?6 vànoves      v'anus
+?6 llúgubres    l^ug'ub**es
+?6 múrgoles     ma**ig'ulas
+?6 llàstimes    l^'astims
+?6 llàgrimes    l^ag**'amas
+?6 ànimes       aimas
+?6 sèmoles      semolas
+?6 màximums     macsimums
+?6 èpoces       epocas
+?6 mètodes      metodes
+?6 síl·labes    sillabes
+?6 tómboles     tombol'as
+?6 brúixoles    brusolas
+?6 sàpiges      sapigis
+?6 pijames      piZam'as
+?6 por          p'Ou
+?6 pors         p'Ous
+?6 fons         f'Onso
+?6 òrbita       oRbita
+?6 òrbites      oRbites
+?6 home         'Ome
+?6 homes        'Omes
+?6 (hi havia)   i||v'ia
+?6 albercoc     ab**icot
+?6 albercocs    ab**icots
+?6 petit        pitit
+?6 petits       pitits
+?6 petita       pitita
+?6 petites      pitites
+?6 xocolata     Sikolata
+?6 xocolates    Sikolates
 
 // 6.3 Other exceptions
 app         ap
@@ -15788,6 +15927,8 @@ anwar		anw'a**
 apolo		ap'olo2
 arbre       aB**e
 arbres      aB**es
+?6 arbre        ajb**e
+?6 arbres       ajb**es
 asímptota   as'imptota
 asímptotes  as'imptotes
 astrazeneca		ast**az'ene2ka
@@ -17671,6 +17812,7 @@ cuesta		kw'e2sta
 cuevas		kw'e2Bas
 cuevillas		kwe2B'il^as
 dario		d'a**jo2
+(del rey)   de2l||Rej
 delgado		de2lQ'aDo2
 destino		de2st'ino2
 diario		dj'a**jo2
@@ -17806,6 +17948,7 @@ luisa		lu'isa
 luz		l'uT
 luís		lu'is
 lópez		l'o2pe2T
+lopez		l'o2pe2T
 machado		matS'aDo2
 maduro		maD'u**o2
 mandela		mand'e2la
@@ -18794,6 +18937,8 @@ houston     Xj'usto2n
 ibarretxe   ibaR'e2tSe
 institute		'institj,ut
 jazz		Z'as
+jefe        xe2fe2
+lejía       le2x'ia
 jersey      Z'ERsi
 journal		dZ'anal
 kids		k'idz
@@ -18854,6 +18999,7 @@ the         de  $u
 times		t'aimz
 time		t'aim
 tour        t'uR
+?6 tour     t'uRt
 twitter     tw'iteR
 unesco      une2sko2
 united		jun'aitid
@@ -18866,6 +19012,7 @@ watch		w'atS
 waterloo		w'Otal,u
 westminster		w'Estminsta
 whatsapp		w'atsap
+whisky      w'iski
 wikileaks		wikil'iks
 windows		w'indawz
 wolfgang    wo2lvgaN

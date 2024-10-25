@@ -1955,6 +1955,9 @@ include ph_catalan_ba
 phonemetable ca-al ca
 include ph_catalan_al
 
+phonemetable ca-ro ca
+include ph_catalan_ro
+
 phonemetable an es
 include ph_aragon
 

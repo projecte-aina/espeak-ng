@@ -8,6 +8,7 @@
 //      ?3 valencian specific characteristics (valencian is 2+3. 3 overwrites 2)
 //      ?4 balearic specific characteristics (balearic is 1+4. 4 overwrites 1)
 //      ?5 algherese specific characteristics (algherese is 2+3+5. , but 5 overwrites the others) It inherits from Valencian because they have the same E/e, b/v and Z/S systems.
+//      ?6 rossellonese (septentrional) specific characteristics (rossellonese is 1+6)
 
 // We have tried to make the rules and lists of transcriptions as general as posible, 
 // and to deal with the particularities of each accent (for instance, unestressed vowels and [v] in Central accent) 
@@ -143,6 +144,7 @@
 ?4  _a) d (sC
 ?5   A) d (A       **   // (roda)   
 ?5      dr         R
+?6   n) dr         R
 
 .group e
         e          e
@@ -304,6 +306,9 @@
 ?5      eix (A+     iS   // rule to control e elision when unestressed
 ?5      eix (en_+   ejS   // rule to control e elision when unestressed
  
+?6      eiem (_    i'em
+?6      eieu (_    i'eu
+
     // prefixes with secondary stress
      _) e (ntreA   ,e   // (entreacte)
      _) e (ntreC   ,e   // (entresòl)
@@ -404,9 +409,12 @@
 ?4 Aig_) g (L01    dZ
 ?4 Atx_) g (L01    dZ
 
+?6   t_) g (L01    dZ
+
 .group h
         h               // silent
         h ($w_alt6  X   // (halar)
+?6      h ($w_alt6      // (halar)
         
     // enclitics
      -) hi (_   'i
@@ -506,7 +514,12 @@ _macro) i (@       i    // prefix: not glide (macroilla)
         i (ns_     'i   // stress the vowel
   L05J) i (ns_     i    // do not stress the vowel
         i (ny_     'i   // stress the vowel
-  L05J) i (ny_     i    // do not stress the vowel          
+  L05J) i (ny_     i    // do not stress the vowel         
+?6   L05C)  ia  (_     i   // avoid esdrúixoles
+?6   L05CC) ia  (_     i   // avoid esdrúixoles
+?6   L05C)  ie  (s_     i   // avoid esdrúixoles
+?6   L05CC) ie  (s_     i   // avoid esdrúixoles
+//?6   L05C)  i   (c_     ''i   // avoid esdrúixoles
   
 .group ix
         ix         iS     
@@ -536,6 +549,12 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 ?4   A) ix (_x     t    // dissimilation (mateix xarop)
 ?4   A) ix (_j     d    // dissimilation (mateix joc)
 ?4   A) ix (_gL01  d    // dissimilation (mateix gerro)
+
+?6   A) ix (_      j
+?6   C) ix (_      i
+?6   A) ix (_C+    j
+?6   A) ix (_A+    j
+
      
 .group ig
      A) ig (_      tS   // (goig)
@@ -553,6 +572,14 @@ _macro) i (@       i    // prefix: not glide (macroilla)
    _pu) ig (L10    dZ   // (puigtort)
 ?4   A) ig (_L13   i    // (vaig portar) 
 ?4   A) ig (_L14   t    // (vaig portar) 
+
+?6   A) ig (_      j
+?6   C) ig (_      i
+?6   A) ig (_A      j
+?6   C) ig (_A      i
+?6   A) ig (_C      j
+?6   C) ig (_C      i
+
      
 .group j
          j          Z    // (jota)
@@ -563,6 +590,8 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 ?4   s_) j         dZ    // (dos jocs)
 ?4   ç_) j         dZ    // (dos celíacs)
         
+?6   t_) j         dZ
+
 .group k
         k          k    // (ka)
 
@@ -706,6 +735,8 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 
 ?5      ny (K      n    // despalatalització final de paraula o de síl·laba
 ?5      ny (_A     nl^  // (any avall)
+
+?6      ns (_      s    // camins
           
             // sant, cent, vint
   _L25) nt (_A     nt   // pronounce final t if followed by a vowel
@@ -731,6 +762,7 @@ _macro) i (@       i    // prefix: not glide (macroilla)
      t) o (r_      o2   // (pantocràtor)
      t) o (rs_     o2   // (pantocràtors)
         ou         O2w  // (mou)
+?6      ou         o2w  // (mou)
      f) o (s       o    // (fos, fosca, fosa, etc.)
      f) o (sf      O    // (fosfo...)
      f) o (rme     o
@@ -740,6 +772,8 @@ _macro) i (@       i    // prefix: not glide (macroilla)
      s) o (pes_    o
     _h) o (mosex   ,O
      _) o (leo     o2   // (oleoducte)
+?6   C) o (n+      o    // According to Coromines at DECat
+?6   C) o (m+      o    // According to Coromines at DECat
 
      X) o          O
         o (l       O
@@ -926,6 +960,9 @@ _contra) r (i      **   // (contrari)
         
          r (s_$w_alt4+   R   // final r is not silent
 ?3       r (s_$w_alt4+   **   // final r is not silent
+
+?6       r (_$w_alt4+   Rt  // final r is not silent (cor)
+?6       r (_$w_alt4+   Rt   // final r is not silent (cor)
     
                 // suffixes with final R not silent
   L05Jfo)  r   (_        R
@@ -1146,6 +1183,11 @@ L05Ji)  u (s_      u    // not a glide (Màrius)
    _t)  u (rbo@$w_alt5    ,u    // (turboautomòbil)
     _)  u (ltra@$w_alt5   ,u    // (ultradreta)
     
+?6   L05C)  ua  (_     u   // avoid esdrúixoles
+?6   L05CC) ua  (_     u   // avoid esdrúixoles
+?6   L05C)  ue  (s_    u   // avoid esdrúixoles
+?6   L05CC) ue  (s_    u   // avoid esdrúixoles
+    
 .group v
        v          b
 ?3     v          v
@@ -1181,6 +1223,8 @@ L05Ji)  u (s_      u    // not a glide (Màrius)
 ?4   ç_) x         tS   // (llaç xamós)
 ?4 Aig_) x         tS
 ?4 Atx_) x         tS
+
+?6   t_) x         tS
      
    _L05) x (A       ks   
       K) x          S    // (linx)
@@ -1207,8 +1251,9 @@ L05Ji)  u (s_      u    // not a glide (Màrius)
          í         ''i
          ó         ''o
          ò         ''O
+    
          ú         ''u
-         ï         i
+         ï         ''i
          ŀ         l
          ü         u
       g) ü         w
@@ -1222,7 +1267,7 @@ L05Ji)  u (s_      u    // not a glide (Màrius)
 
         // cross-accent adaptations
 ?2       è (s_      ''e  // final "ès" is pronounced "és" in western accents (francès)
-?2       è (s_      ''e  // final "èn" is pronounced "én" in western accents (francès)
+?2       è (n_      ''e  // final "èn" is pronounced "én" in western accents (francès)
 ?2       è (_       ''e  // final "è" is pronounced "é" in western accents (francès)
 ?2       è (ixer_   ''e
 ?2       è (ncer_   ''e
@@ -1236,6 +1281,65 @@ L05Ji)  u (s_      u    // not a glide (Màrius)
 ?1       é (iem_    ''E
 ?1       é (ieu_    ''E
 
+?6       è (s_      ''e  // final "ès" is pronounced "és" in rossellonese accents (francès)
+?6       è (n_      ''e  // final "èn" is pronounced "én" in rossellonese accents (francès)
+
+?6       à (Cic_    a   // avoid esdrúixoles
+?6       à (Cica_   a   // avoid esdrúixoles
+?6       à (Cics_   a   // avoid esdrúixoles
+?6       à (Ciques_ a   // avoid esdrúixoles
+?6       è (Cic_    e   // avoid esdrúixoles
+?6       è (Cica_   e   // avoid esdrúixoles
+?6       è (Cics_   e   // avoid esdrúixoles
+?6       è (Ciques_ e   // avoid esdrúixoles
+?6       é (Cic_    e   // avoid esdrúixoles
+?6       é (Cica_   e   // avoid esdrúixoles
+?6       é (Cics_   e   // avoid esdrúixoles
+?6       é (Ciques_ e   // avoid esdrúixoles
+?6       ú (Cic_    u   // avoid esdrúixoles
+?6       ú (Cica_   u   // avoid esdrúixoles
+?6       ú (Cics_   u   // avoid esdrúixoles
+?6       ú (Ciques_ u   // avoid esdrúixoles
+?6       í (Cic_    i   // avoid esdrúixoles
+?6       í (Cica_   i   // avoid esdrúixoles
+?6       í (Cics_   i   // avoid esdrúixoles
+?6       í (Ciques_ i   // avoid esdrúixoles
+?6       ó (Cic_    o   // avoid esdrúixoles
+?6       ó (Cica_   o   // avoid esdrúixoles
+?6       ó (Cics_   o   // avoid esdrúixoles
+?6       ó (Ciques_ o   // avoid esdrúixoles
+?6       ò (CCic_    o   // avoid esdrúixoles
+?6       ò (CCica_   o   // avoid esdrúixoles
+?6       ò (CCics_   o   // avoid esdrúixoles
+?6       ò (CCiques_ o   // avoid esdrúixoles
+?6       à (CCic_    a   // avoid esdrúixoles
+?6       à (CCica_   a   // avoid esdrúixoles
+?6       à (CCics_   a   // avoid esdrúixoles
+?6       à (CCiques_ a   // avoid esdrúixoles
+?6       è (CCic_    e   // avoid esdrúixoles
+?6       è (CCica_   e   // avoid esdrúixoles
+?6       è (CCics_   e   // avoid esdrúixoles
+?6       è (CCiques_ e   // avoid esdrúixoles
+?6       é (CCic_    e   // avoid esdrúixoles
+?6       é (CCica_   e   // avoid esdrúixoles
+?6       é (CCics_   e   // avoid esdrúixoles
+?6       é (CCiques_ e   // avoid esdrúixoles
+?6       ú (CCic_    u   // avoid esdrúixoles
+?6       ú (CCica_   u   // avoid esdrúixoles
+?6       ú (CCics_   u   // avoid esdrúixoles
+?6       ú (CCiques_ u   // avoid esdrúixoles
+?6       í (CCic_    i   // avoid esdrúixoles
+?6       í (CCica_   i   // avoid esdrúixoles
+?6       í (CCics_   i   // avoid esdrúixoles
+?6       í (CCiques_ i   // avoid esdrúixoles
+?6       ó (CCic_    o   // avoid esdrúixoles
+?6       ó (CCica_   o   // avoid esdrúixoles
+?6       ó (CCics_   o   // avoid esdrúixoles
+?6       ó (CCiques_ o   // avoid esdrúixoles
+?6       ò (CCic_    o   // avoid esdrúixoles
+?6       ò (CCica_   o   // avoid esdrúixoles
+?6       ò (CCics_   o   // avoid esdrúixoles
+?6       ò (CCiques_ o   // avoid esdrúixoles
 
 .group '
          'n (_S2t    n

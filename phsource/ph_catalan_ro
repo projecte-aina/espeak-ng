@@ -1,0 +1,178 @@
+
+phoneme o
+  vwl starttype #u endtype #u
+  length 160
+  ChangePhoneme(u)
+  FMT(vowel/u_bck)
+endphoneme
+
+phoneme O
+  vwl starttype #u endtype #u
+  length 160
+  ChangePhoneme(o)
+  FMT(vowel/u_bck)
+endphoneme
+
+
+phoneme e
+  vwl starttype #e endtype #e
+  length 170
+  IF thisPh(isUnstressed) AND NOT thisPh(isWordEnd) THEN
+//    IF prevPh(Z) OR nextPh(Z) OR nextPh(S) OR nextPh(l^) THEN
+    IF prevPh(Z) THEN
+        ChangePhoneme(i)
+    ELSE
+        ChangePhoneme(@)
+    ENDIF
+  ENDIF
+  
+  FMT(vowel/e)
+endphoneme
+
+phoneme E
+  vwl starttype #e endtype #e
+  length 180
+  IF thisPh(isUnstressed) AND NOT thisPh(isWordEnd) THEN
+//    IF  prevPh(Z) OR prevPh(S) OR nextPh(Z) OR nextPh(S) OR nextPh(l^) THEN
+    IF prevPh(Z) THEN
+        ChangePhoneme(i)
+    ELSE
+        ChangePhoneme(@)
+    ENDIF
+  ENDIF
+  FMT(vowel/e_mid)
+endphoneme
+
+
+phoneme T   // **th**in
+  vls dnt frc
+  voicingswitch D
+  lengthmod 3
+  Vowelin f1=0  f2=1700 -300 300  f3=-100 80
+  Vowelout f1=0 f2=1700 -300 250  f3=-100 80  rms=20
+  ChangePhoneme(s)
+  WAV(ufric/th)
+endphoneme
+
+phoneme S
+  vls pla frc sib
+  voicingswitch z
+  lengthmod 3
+  Vowelin  f1=0  f2=1700 -300 300  f3=-100 80
+  Vowelout f1=0  f2=1700 -300 250  f3=-100 80  rms=20
+  
+ 
+  IF thisPh(isWordEnd) THEN
+    IF nextPh(isVoiced) THEN
+      ChangePhoneme(Z)
+    ENDIF
+  ENDIF
+  
+  WAV(ufric/sh)
+endphoneme
+
+phoneme t        // dental variant of /t/
+  vls dnt stp
+  lengthmod 2
+  voicingswitch d
+  Vowelin f1=0  f2=1600 -300 300  f3=-100 80
+  Vowelout f1=0 f2=1600 -300 250  f3=-100 80  rms=20
+  IF nextPh(isPause2) THEN
+    WAV(ustop/t_dnt, 30)
+  ELIF thisPh(isWordStart) THEN // don't change it if it's word start
+  ELIF thisPh(isWordEnd) THEN
+    IF nextPh(m) THEN           // assimilació de punt i mode 
+        ChangePhoneme(m)
+    ELIF nextPh(f) THEN
+        ChangePhoneme(f)
+    ELIF nextPh(l^) THEN
+        ChangePhoneme(l^)
+    ELIF nextPh(k) THEN
+        ChangePhoneme(k)
+    ELIF nextPh(tS) OR nextPh(dZ) THEN
+        ipa NULL
+    ELIF nextPh(isVoiced) AND nextPh(isNotVowel) THEN
+        ChangePhoneme(d)
+    ENDIF
+  ELIF nextPh(isVoiced) AND nextPh(isNotVowel) THEN
+    IF nextPh(**) OR nextPh(w) OR nextPh(j) THEN
+    ELSE
+      ChangePhoneme(d)
+    ENDIF
+  ELIF nextPh(s) AND nextPh(isWordEnd) AND next2Ph(isVoiced) THEN // sonority propagation
+    ChangePhoneme(d)
+  ENDIF
+  WAV(ustop/t_dnt2, 60)
+endphoneme
+
+phoneme n
+  vcd alv nas
+  Vowelout f1=2 f2=1500 -300 250  f3=-100 80  rms=20 brk
+  lengthmod 4
+
+  IF KlattSynth THEN
+    Vowelin f1=0 f2=1500 -200 200 f3=0 80
+    FMT(klatt/n)
+  ENDIF
+
+  NextVowelStarts
+    VowelStart(n/n@)
+    VowelStart(n/na)
+    VowelStart(n/ne)
+    VowelStart(n/ni)
+    VowelStart(n/no)
+    VowelStart(n/nu)
+  EndSwitch
+  
+  IF nextPh(f) THEN
+    ChangePhoneme(M)
+  ELIF nextPh(k) OR nextPh(g) THEN
+      ChangePhoneme(N)
+  ELIF nextPh(p) OR nextPh(b) OR nextPh(v) OR nextPh(m) THEN
+      ChangePhoneme(m)
+  ELIF nextPh(l^) OR nextPh(n^) OR nextPh(Z) THEN
+      ChangePhoneme(n^)
+  ENDIF
+  IF prevPh(isNotVowel) AND nextPhW(isLiquid) THEN
+    FMT(n/nj)
+  ELIF prevPh(isPause) OR prevPh(n) THEN
+    FMT(n/_n)
+  ELIF nextPh(isNotVowel) THEN
+    FMT(n/n_)
+  ENDIF
+endphoneme
+
+phoneme m
+  vcd blb nas
+  Vowelout f1=2  f2=1000 -500 -350  f3=-200 80 brk
+  lengthmod 4
+
+  IF KlattSynth THEN
+    Vowelin  f1=0  f2=1000 -50 -200  f3=-200 80
+    IF nextPh(isPause2) THEN
+      FMT(klatt/m_)
+    ENDIF
+    FMT(klatt/m)
+  ENDIF
+
+  NextVowelStarts
+    VowelStart(m/m@)
+    VowelStart(m/ma)
+    VowelStart(m/me)
+    VowelStart(m/mi)
+    VowelStart(m/mo)
+    VowelStart(m/mu)
+  EndSwitch
+  
+  IF nextPh(f) OR nextPh(v) OR nextPh(k) OR nextPh(g) THEN
+    ChangePhoneme(M)
+  ENDIF
+
+  IF prevPh(isNotVowel) AND nextPhW(isLiquid) THEN
+    FMT(m/mj)
+  ELIF prevPh(isPause) THEN
+    FMT(m/_m)
+  ELIF nextPh(isNotVowel) THEN
+    FMT(m/m_)
+  ENDIF
+endphoneme
