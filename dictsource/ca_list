@@ -203,9 +203,11 @@ _16	s'Edze
 _17	dis'Et
 ?3 _17  d'eset
 ?4 _17  d'eset
+?6 _17  dizas'et
 _18	diB'ujt
 ?3 _18 d'iujt
 ?4 _18 de2v'ujt
+?6 _18 dizev'ujt
 _19	din'Ow
 ?3 _19 d'enOw
 ?4 _19 d'e2nOw
@@ -720,8 +722,11 @@ tu          t'u         $verbf
 ell         'el^        $verbf
 ella        'el^a       $verbf
 nosaltres   noz'alt**es $verbf
+?6 nosaltres   noz'alt**os $verbf
 vosaltres   boz'alt**es $verbf
+?6 vosaltres   boz'alt**os $verbf
 ells        'el^s       $verbf
+?6 ells     'el^os       $verbf
 elles       'el^es      $verbf
 
 meu         m'ew        $nounf
@@ -15817,8 +15822,8 @@ tens     t'ens   $verb
 ?6 esquix   esk'iS
 ?6 guix     g'iS
 ?6 moix     m'oS
-?6 aqueix   ak'eS
-?6 mateix   mat'eS
+?6 aqueix   ak'ej
+?6 mateix   mat'ej
 ?6 esquaix  eskw'aS
 ?6 flaix    fl'aS
 ?6 haixix   aS'iS
@@ -15891,8 +15896,8 @@ tens     t'ens   $verb
 ?6 brúixoles    brusolas
 ?6 sàpiges      sapigis
 ?6 pijames      piZam'as
-?6 por          p'Ou
-?6 pors         p'Ous
+?6 por          p'Ow
+?6 pors         p'Ows
 ?6 fons         f'Onso
 ?6 òrbita       oRbita
 ?6 òrbites      oRbites
@@ -15907,6 +15912,139 @@ tens     t'ens   $verb
 ?6 petites      pitites
 ?6 xocolata     Sikolata
 ?6 xocolates    Sikolates
+?6 aigua        ajga
+?6 tens         tenes
+?6 menys        menos
+?6 hospital     espital
+?6 hospitals    espitals
+?6 ve           ven
+?6 així         aS'is
+?6 julivert     Zib'eRt
+?6 juliverts    Zib'eRts
+?6 menyspreu    mesp**Ew
+?6 menyspreus   mesp**Ews
+?6 estrellada   estelada
+?6 recte        R'Edde
+?6 recta        R'Edda
+?6 rectes       R'Eddes
+?6 magatzem     maQaz'in
+?6 magatzems    maQaz'ins
+?6 tèrbol       t'ERbo
+?6 menys        m'Enos
+?6 ningú        ning'us
+?6 caldre       calg'E
+?6 príncep      p**'ince
+?6 (hi aneu)    i||n'ew
+?6 (hi anem)    i||n'em
+?6 número       num'e**o
+?6 números      num'e**os
+?6 tens         t'enes
+?6 pots         p'odes 
+?6 dius         d'iwes
+?6 deus         d'Ewes
+?6 confons      conf'ones
+?6 atura	at'uda
+?6 aturà	atud'a
+?6 aturada	atud'ada
+?6 aturades	atud'ades
+?6 aturam	atud'am
+?6 aturant	atud'ant
+?6 aturara	atudara
+?6 aturarà	atudar'a
+?6 aturaran	atudar'an
+?6 aturaràs	atudar'as
+?6 aturar	atud'a
+?6 aturaré	atudar'e
+?6 aturarem	atudar'Em
+?6 aturàrem	atud'arem
+?6 aturaren	atud'aren
+?6 aturares	atud'ares
+?6 aturareu	atudar'Ew
+?6 aturàreu	atud'arew
+?6 aturaria	atudar'ia
+?6 aturaríem	atudar'iem
+?6 aturarien	atudar'ien
+?6 aturaries	atudar'ies
+?6 aturaríeu	atudar'iee
+?6 aturàs	atud'as
+?6 aturàssim	atud'assim
+?6 aturassin	atud'assin
+?6 aturassis	atud'assis
+?6 aturàssiu	atud'assiw
+?6 aturat	atud'at
+?6 aturats	atud'ats
+?6 aturau	atud'aw
+?6 aturava	atud'ava
+?6 aturàvem	atud'avem
+?6 aturaven	atud'aven
+?6 aturaves	atud'aves
+?6 aturàveu	atud'avew
+?6 ature	at'ude
+?6 aturem	atud'Em
+?6 aturen	at'uden
+?6 atures	at'udes
+?6 aturés	atud'es
+?6 aturéssim	atud'essim
+?6 aturessin	atud'essin
+?6 aturessis	atud'essis
+?6 aturéssiu	atud'essiu
+?6 atureu	atud'Ew
+?6 aturi	at'udi
+?6 aturí	atud'i
+?6 aturin	at'udin
+?6 aturis	at'udis
+?6 aturo	at'udo
+?6 compra	cr'ompa
+?6 comprà	cromp'a
+?6 comprada	cromp'ada
+?6 comprades	cromp'ades
+?6 compram	cromp'am
+?6 comprant	cromp'ant
+?6 comprara	cromp'ara
+?6 comprarà	crompar'a
+?6 compraran	crompar'an
+?6 compraràs	crompar'as
+?6 comprar	cromp'a
+?6 compraré	crompar'e
+?6 comprarem	crompar'Em
+?6 compràrem	cromp'arem
+?6 compraren	cromp'aren
+?6 comprares	cromp'ares
+?6 comprareu	crompar'Ew
+?6 compràreu	cromp'arew
+?6 compraria	crompar'ia
+?6 compraríem	crompar'iem
+?6 comprarien	crompar'ien
+?6 compraries	crompar'ies
+?6 compraríeu	crompar'ieu
+?6 compràs	cromp'as
+?6 compràssim	cromp'assim
+?6 comprassin	cromp'assin
+?6 comprassis	cromp'assis
+?6 compràssiu	cromp'assiu
+?6 comprat	cromp'at
+?6 comprats	cromp'ats
+?6 comprau	cromp'aw
+?6 comprava	cromp'ava
+?6 compràvem	cromp'avem
+?6 compraven	cromp'aven
+?6 compraves	cromp'aves
+?6 compràveu	cromp'aveu
+?6 compre	cr'ompe
+?6 comprem	cr'ompem
+?6 compren	cr'ompen
+?6 compres	cr'ompes
+?6 comprés	cromp'es
+?6 compréssim	cromp'essim
+?6 compressin	cromp'essin
+?6 compressis	cromp'essis
+?6 compréssiu	cromp'essiu
+?6 compreu	cromp'eu
+?6 compri	cr'ompi
+?6 comprí	cromp'i
+?6 comprin	cr'ompin
+?6 compris	cr'ompis
+?6 compro	cr'ompo
 
 // 6.3 Other exceptions
 app         ap
@@ -18085,7 +18223,7 @@ sancho		s'antSo2
 sandra		s'and**a
 sandro		s'and**o2
 santana		sant'ana
-santiago		santj'aQo2
+santiago		santi'aQo2
 santos		s'anto2s
 sanz		s'anT
 sayo		s'ajo2
@@ -19021,3 +19159,4 @@ world		w'ald
 youtube		j'utjub
 zarzuela    saRsu'ela
 zarzuela    TaRTu'ela
+?6 Sòcrates sok**'ates

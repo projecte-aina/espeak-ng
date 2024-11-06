@@ -17,9 +17,9 @@ endphoneme
 phoneme e
   vwl starttype #e endtype #e
   length 170
-  IF thisPh(isUnstressed) AND NOT thisPh(isWordEnd) THEN
+  IF thisPh(isUnstressed) THEN
 //    IF prevPh(Z) OR nextPh(Z) OR nextPh(S) OR nextPh(l^) THEN
-    IF prevPh(Z) THEN
+    IF prevPh(Z) AND NOT thisPh(isWordEnd) THEN
         ChangePhoneme(i)
     ELSE
         ChangePhoneme(@)
@@ -32,9 +32,9 @@ endphoneme
 phoneme E
   vwl starttype #e endtype #e
   length 180
-  IF thisPh(isUnstressed) AND NOT thisPh(isWordEnd) THEN
+  IF thisPh(isUnstressed) THEN
 //    IF  prevPh(Z) OR prevPh(S) OR nextPh(Z) OR nextPh(S) OR nextPh(l^) THEN
-    IF prevPh(Z) THEN
+    IF prevPh(Z) AND NOT thisPh(isWordEnd) THEN
         ChangePhoneme(i)
     ELSE
         ChangePhoneme(@)

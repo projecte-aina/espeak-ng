@@ -552,6 +552,7 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 
 ?6   A) ix (_      j
 ?6   C) ix (_      i
+?6   A) ixos_      js
 ?6   A) ix (_C+    j
 ?6   A) ix (_A+    j
 
@@ -696,7 +697,7 @@ _macro) i (@       i    // prefix: not glide (macroilla)
         ntb        mb   // (avantbraç)
         ntp        mb   // (avantpassat)
         nts        ns   // (avantsala)
-        ntg        ns   // (avantguarda)
+        ntg        ng   // (avantguarda)
     tra) n (scend       // (transcendència)
         
         nt (-hA    =nt  // followed by clitic
