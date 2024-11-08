@@ -387,8 +387,11 @@
   _lin) e (a       i    // lineal
 
 .group f
-        f          f
-        ff         f
+         f         f
+         ff        f
+        
+?6 L05J) f (_      f@
+?6 L05J) fs(_      f@s
 
 .group g
         g          g
@@ -517,9 +520,10 @@ _macro) i (@       i    // prefix: not glide (macroilla)
   L05J) i (ny_     i    // do not stress the vowel         
 ?6   L05C)  ia  (_     i   // avoid esdrúixoles
 ?6   L05CC) ia  (_     i   // avoid esdrúixoles
-?6   L05C)  ie  (s_     i   // avoid esdrúixoles
-?6   L05CC) ie  (s_     i   // avoid esdrúixoles
-//?6   L05C)  i   (c_     ''i   // avoid esdrúixoles
+?6   L05C)  ie  (s_    i   // avoid esdrúixoles
+?6   L05CC) ie  (s_    i   // avoid esdrúixoles
+?6   L05C)  ic  (_     ik@   
+?6   L05C)  ics (_     ik@s  
   
 .group ix
         ix         iS     
@@ -832,6 +836,7 @@ _macro) i (@       i    // prefix: not glide (macroilla)
         o (des_    O
         o (xi      O
         o (xis     O
+        
         
    // prefixes with secondary stress
     _c) o (ntraA   ,o

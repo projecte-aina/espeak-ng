@@ -6908,6 +6908,8 @@ Xóvar	$alt4
 Xóvars	$alt4
 zíngar	$alt4
 zíngars	$alt4
+fier	$alt4
+fiers	$alt4
 ?6 madur	$alt4
 ?6 madurs	$alt4
 ?6 segur	$alt4
@@ -15792,6 +15794,7 @@ tens     t'ens   $verb
 ?6 aigua    aiga
 ?6 aigües   aiges
 ?6 gaires   gwaj**es
+?6 gaire    gwaj**es
 ?6 flor     flu
 ?6 flors    flus
 ?6 hores    u**es
@@ -16045,6 +16048,10 @@ tens     t'ens   $verb
 ?6 comprin	cr'ompin
 ?6 compris	cr'ompis
 ?6 compro	cr'ompo
+?6 alt      n'al
+?6 alta     n'alta
+?6 alts     n'als
+?6 altes    n'altes
 
 // 6.3 Other exceptions
 app         ap
