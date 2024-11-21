@@ -77,6 +77,34 @@ phoneme n
   ENDIF
 endphoneme
 
+phoneme m
+  vcd alv nas
+  Vowelout f1=2 f2=1500 -300 250  f3=-100 80  rms=20 brk
+  lengthmod 4
+
+  IF KlattSynth THEN
+    Vowelin f1=0 f2=1500 -200 200 f3=0 80
+    FMT(klatt/n)
+  ENDIF
+
+  NextVowelStarts
+    VowelStart(n/n@)
+    VowelStart(n/na)
+    VowelStart(n/ne)
+    VowelStart(n/ni)
+    VowelStart(n/no)
+    VowelStart(n/nu)
+  EndSwitch
+  
+  IF nextPh(f) OR nextPh(v) THEN
+    ChangePhoneme(M)
+  ELIF nextPh(k) OR nextPh(g) THEN
+      ChangePhoneme(N)
+  ELIF nextPh(t) OR nextPh(d) OR nextPh(n) THEN
+      ChangePhoneme(n)
+  ENDIF
+endphoneme
+
 // R
 //=====================
 phoneme R

@@ -99,6 +99,7 @@
 ?3  _o) b  (sC         
 ?4  _o) b  (sC         
 ?4   A) brs (_A     dds // (obrs una porta)
+?5   A) bs         s  // (obstrucció)
   
  
 .group c
@@ -114,7 +115,7 @@
 ?4 Aig_) c (L01    ts
 ?4 Atx_) c (L01    ts
 
-?5       c (L01    s    // (cirera)
+?5       cc (L01   s    // (obstrucció)
 
 .group ç
         ç (_       =s    // (llaç)
@@ -780,6 +781,7 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 ?5      nc (s_C     Nk     // velarization (cranc)
 ?5      ng (s_C     Nk     // velarization (fang)
 ?5      ns          nts
+?5      nn          n
 
 ?3      nn         n    // (ennuvolat)
 ?3  _i) nn         nn   // (innecessari)
@@ -892,7 +894,7 @@ _macro) i (@       i    // prefix: not glide (macroilla)
     _b) o (ca@     ,o
 catalan) o (@      o2
     _c) o (ll@     ,O
-    _c) o (ma@     ,o
+    _c) o (ma@@    ,o
     _f) o (to      ,o
     _f) o (tocòp   ,o
     _p) o (rta     ,O
@@ -1204,7 +1206,8 @@ _contra) r (i      **   // (contrari)
         
         tm         mm	// gemination (setmana)
    _so) tm         dm   // avoid gemination (sotmès)
-?3      tm         m	// gemination (setmana)
+?3      tm         m	// not gemination (setmana)
+?5      tm         m	// not gemination (setmana)
         tn         nn	// gemination (cotna)
 ?3   i) tz (a      z    // (normalitzar) 
      i) tz (a      tz   // (normalitzar) 
