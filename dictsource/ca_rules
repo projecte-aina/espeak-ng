@@ -114,7 +114,7 @@
 ?4 Aig_) c (L01    ts
 ?4 Atx_) c (L01    ts
 
-?5       c (L01    ts    // (cirera)
+?5       c (L01    s    // (cirera)
 
 .group ç
         ç (_       =s    // (llaç)
@@ -303,9 +303,12 @@
 ?4      e (ga_+    @
 ?4      e (gues_+  @
 
-?5      eix (A+     iS   // rule to control e elision when unestressed
-?5      eix (en_+   ejS   // rule to control e elision when unestressed
- 
+?5      eix (A+     S   // rule to control e elision when unestressed #20 nov - editat per eliminar j
+?5      eix (en_+   eS   // rule to control e elision when unestressed
+?5      e (t       E    // (barrufet)
+?5  _d) e (cid     i
+?5  ll) eu (ger    u
+
 ?6      eiem (_    i'em
 ?6      eieu (_    i'eu
 
@@ -548,11 +551,18 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 
 ?4   A) ix (_r     j    // (mateix roc)
 ?4   A) ix (_s     t    // dissimilation (peix salat)
-?4   A) ix (_cL01  t    // dissimilation (peix celíac)
+?4   A) ix (_cL01  t    //?1   A) ix (K      S    // do not pronounce i (peix)
+?1   A) ix (A      S    // do not pronounce i (peixar)
+?1   A) ix (_A     Z    // sonorisation + do not pronounce i (peix amable)
+?1   A) ix (_L11   Z    // sonorisation + do not pronounce i (peix blau)  dissimilation (peix celíac)
 ?4   A) ix (_z     d    // dissimilation (mateix zero)
 ?4   A) ix (_x     t    // dissimilation (mateix xarop)
 ?4   A) ix (_j     d    // dissimilation (mateix joc)
 ?4   A) ix (_gL01  d    // dissimilation (mateix gerro)
+
+?5   A) ix (K      S    // do not pronounce i (peix)
+?5   A) ix (A      S    // do not pronounce i (peixar)
+
 
 ?6   A) ix (_      j
 ?6   C) ix (_      i
@@ -629,12 +639,16 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 
 ?5    A) l (A      **
 ?5   A_) l (A      **
-?5    A) l (_A     **
+//?5    A) l (_A     **
 ?5  L13) l (A      **   // plosives (pla)
 ?5    f) l (A      **
-
+?5    _) l (A_+    l
+?5    _) l (As_+   l
+?5       ls        lts
 ?5       ll (K     l    // despalatalització final de paraula o de síl·laba
-?5       ll (_A    l^   // (coll avall)
+?5       ll (sK    lt    // despalatalització + africatz final de paraula o de síl·laba
+
+//?5       ll (_A    l^   // (coll avall)
 .group m
         m          m
      _) m' (P2     m    // apostrophe
@@ -660,11 +674,13 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 ?3      mp (_      mp   // do pronounce final p (valencian)
 ?4      mp (_      mp   // do pronounce final p (balearic)
 ?4      mpls (_    ms   // do pronounce final p (balearic)
+?5      mp (s      nt    // do not pronounce final p
 
     // adverbs
     @) ment (_S4t  m''en
 ?3  @) ment (_S4t  m''ent
 ?4  @) ment (_S4t  m''ent
+?5  @) ment (_S4t  m''ent
 
     // not adverbs
     @) ment (_$w_alt5+	m'en
@@ -672,6 +688,8 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 ?3  @) ment (_C$w_alt5+ m'en
 ?4  @) ment (_$w_alt5+  m'ent
 ?4  @) ment (_C$w_alt5+ m'en
+?5  @) ment (_$w_alt5+  m'ent
+?5  @) ment (_C$w_alt5+ m'ent
 
 .group n
         n          n
@@ -734,6 +752,34 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 ?4      nc (_C     N     // velarization (cranc)
 ?4      ng (_C     N     // velarization (fang)
 
+?5      nt (_      =nt   // (alt)
+?5      nt (_A     =nt   // (alt)
+?5      nt (_hA    =nt   // (alt)
+?5      nt (_C     =nt   // (alt)
+?5      nt (_d     =n   // (alt)
+?5      nt (_j     =n   // (alt)
+?5      nt (_gL01  =n   // (alt)
+?5      nd (_      =nd   // (alt)
+?5      nd (_A     =nd   // (alt)
+?5      nd (_hA    =nd   // (alt)
+?5      nd (_C     =n    // (alt)
+?5      nc (_      Nk    // velarization (cranc)
+?5      ng (_      Nk    // velarization (fang)
+?5      nc (_C     Nk     // velarization (cranc)
+?5      ng (_C     Nk     // velarization (fang)
+?5      nt (s_      =nt   // (alt)
+?5      nt (s_A     =nt   // (alt)
+?5      nt (s_hA    =nt   // (alt)
+?5      nt (s_C     =n    // (alt)
+?5      nd (s_      =nd   // (alt)
+?5      nd (s_A     =nd   // (alt)
+?5      nd (s_hA    =nd   // (alt)
+?5      nd (s_C     =n    // (alt)
+?5      nc (s_      Nk    // velarization (cranc)
+?5      ng (s_      Nk    // velarization (fang)
+?5      nc (s_C     Nk     // velarization (cranc)
+?5      ng (s_C     Nk     // velarization (fang)
+?5      ns          nts
 
 ?3      nn         n    // (ennuvolat)
 ?3  _i) nn         nn   // (innecessari)
@@ -1036,7 +1082,16 @@ _contra) r (i      **   // (contrari)
 ?4    A)   rt (_C$w_alt4     **    // (sort)
 ?4    A)   rd (_C$w_alt4     **    // (sord)
 
-?5    A)   rs        lts
+?5    A)   rs (A       lts
+?5    A)   rs (K       lts
+?5    A)   rt (_+      lt     // (art)
+?5    A)   rt (_A+     lt     // (art amic)
+?5    A)   rt (s_+     lt     // (arts) 
+?5    A)   rt (_C+     lt      // (art bonic)
+?5    A)   rd (_+      ld     // (record)
+?5    A)   rd (_A+     ld     // (record amic)
+?5    A)   rd (s_+     ld     // (record)
+?5    A)   rd (_C+     lt      // (record bonic)
 
 .group s
         s          s
@@ -1198,7 +1253,7 @@ L05Ji)  u (s_      u    // not a glide (Màrius)
        v          b
 ?3     v          v
 ?4     v          v
-
+?5     v          v
  
 .group w
        w          b
@@ -1357,3 +1412,5 @@ L05Ji)  u (s_      u    // not a glide (Màrius)
          'us (_S3t   us
       A) 'us (_S3t   ws
          'ls (_S3t   ls
+?5       'ls (_S3t   lts
+

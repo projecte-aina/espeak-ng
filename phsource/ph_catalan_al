@@ -109,13 +109,13 @@ phoneme S
   lengthmod 3
   Vowelin  f1=0  f2=2100 100 300  f3=-100 80
   Vowelout f1=0  f2=2100 100 300  f3=-100 80
-  IF prevPh(i) OR prevPh(j) THEN
+//  IF prevPh(i) OR prevPh(j) THEN
     IF thisPh(isWordEnd) AND nextPh(isVoiced) THEN
         ChangePhoneme(Z)
     ENDIF
-  ELSE
-    ChangePhoneme(tS)
-  ENDIF
+//  ELSE
+//    ChangePhoneme(tS)
+//  ENDIF
   WAV(ufric/sh)
 endphoneme
 
@@ -203,4 +203,82 @@ phoneme g
   ENDIF
   FMT(g/g) addWav(x/g2)      
 endphoneme
+
+// plosives (oclusives)
+// ====================
+
+phoneme b
+  vcd blb stp
+
+  IF thisPh(isWordEnd) THEN
+    IF nextPh(isVoiced) AND nextPh(isNotVowel) THEN
+    ELIF prevPh(m) THEN
+    ELSE
+      ChangePhoneme(p)
+    ENDIF
+  ELIF nextPh(s) AND nextPh(isWordEnd) AND next2Ph(isVoiced) THEN // keep sonority 
+  ELIF nextPh(isVoiced) THEN
+    IF nextPh(isVowel) OR nextPh(isRhotic) OR nextPh(l) OR nextPh(j) OR nextPh(w) THEN
+      IF prevPh(isVowel) OR prevPh(isLiquid) OR prevPh(isVFricative) THEN
+        
+      ENDIF
+    ENDIF  
+  ELSE
+    ChangePhoneme(p)
+  ENDIF
+
+  CALL base1/b
+endphoneme
+
+phoneme g
+  vcd vel stp
+  lengthmod 5
+  voicingswitch k
+  Vowelin  f1=2  f2=2300 200 300  f3=-300 80
+  Vowelout f1=2  f2=2300 250 300  f3=-300 80 brk
+  IF thisPh(isWordEnd) THEN
+    IF nextPh(isVoiced) AND nextPh(isNotVowel) THEN
+    ELSE
+      ChangePhoneme(k)
+    ENDIF
+  ELIF nextPh(s) AND nextPh(isWordEnd) AND next2Ph(isVoiced) THEN // keep sonority 
+  ELIF nextPh(isVoiced) THEN
+    IF nextPh(isVowel) OR nextPh(isRhotic) OR nextPh(l) OR nextPh(j) OR nextPh(w) THEN
+      IF prevPh(isVowel) OR prevPh(isLiquid) OR prevPh(isVFricative) THEN
+        
+      ENDIF
+    ENDIF  
+  ELSE
+    ChangePhoneme(k)
+  ENDIF
+  IF PreVoicing THEN
+    FMT(g/xg)
+  ENDIF
+  IF nextPh(isPause2) THEN
+    FMT(g/g_) addWav(x/g_)
+  ENDIF
+  FMT(g/g) addWav(x/g2)        
+endphoneme
+
+phoneme d
+  vcd dnt stp
+  IF thisPh(isWordEnd) THEN
+    IF nextPh(isVoiced) AND nextPh(isNotVowel) THEN
+    ELSE
+      ChangePhoneme(t)
+    ENDIF
+  ELIF nextPh(s) AND nextPh(isWordEnd) AND next2Ph(isVoiced) THEN // keep sonority 
+  ELIF nextPh(isVoiced) THEN
+    IF nextPh(isVowel) OR nextPh(isRhotic) OR nextPh(l) OR nextPh(j) OR nextPh(w) THEN
+      IF prevPh(isVowel) OR prevPh(**) OR prevPh(R) OR prevPh(j) OR prevPh(w) OR prevPh(isVFricative) THEN
+        
+      ENDIF
+    ENDIF  
+  ELSE
+    ChangePhoneme(t)
+  ENDIF
+
+  CALL base2/d
+endphoneme
+
 

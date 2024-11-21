@@ -721,6 +721,8 @@ jo          Z'O         $verbf
 tu          t'u         $verbf
 ell         'el^        $verbf
 ella        'el^a       $verbf
+?5 ell      'el        $verbf
+?5 ella     'ela       $verbf
 nosaltres   noz'alt**es $verbf
 ?6 nosaltres   noz'alt**os $verbf
 vosaltres   boz'alt**es $verbf
@@ -15790,6 +15792,14 @@ tens     t'ens   $verb
 ?5 de       $u de2 
 ?5 on       ond
 ?5 quan     quand
+?5 que      ke2
+?5 pels     pe2s
+?5 dels     de2s
+
+?5 llenya   N'eNa
+?5 enlloc   eN'Ok
+?5 estiu    ist'iw
+?5 amb      ama
 ?6 estiu    ist'iw
 ?6 aigua    aiga
 ?6 aigües   aiges
