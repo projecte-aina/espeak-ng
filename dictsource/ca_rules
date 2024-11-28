@@ -145,6 +145,7 @@
 ?4  _a) d (sC
 ?5   A) d (A       **   // (roda)   
 ?5      dr         R
+?5   _) d (orm     R
 ?6   n) dr         R
 
 .group e
@@ -309,6 +310,8 @@
 ?5      e (t       E    // (barrufet)
 ?5  _d) e (cid     i
 ?5  ll) eu (ger    u
+?5   _) e          e2
+?5  _t) e (le      e2
 
 ?6      eiem (_    i'em
 ?6      eieu (_    i'eu
@@ -502,6 +505,8 @@ _macro) i (@       i    // prefix: not glide (macroilla)
   _bio) i (@       i    // prefix: not glide
    _re) i (n@      i    // prefix: not glide
         
+?5   A) i (_       i
+?5   A) i (s_      i
     // prefixes with secondary stress
      _) ibero      ,iBe2**o2  // iberoromà
     _x) i (ux      ,i
@@ -521,7 +526,13 @@ _macro) i (@       i    // prefix: not glide (macroilla)
         i (ns_     'i   // stress the vowel
   L05J) i (ns_     i    // do not stress the vowel
         i (ny_     'i   // stress the vowel
-  L05J) i (ny_     i    // do not stress the vowel         
+  L05J) i (ny_     i    // do not stress the vowel       
+  
+?5   _) i (m      a // (impossible)
+?5   _) i (n      a // (interrogar)
+?5   _) i (ntel·lect  i // (intel·lectual)
+?5   _) i (ndi    i // (indià)
+
 ?6   L05C)  ia  (_     i   // avoid esdrúixoles
 ?6   L05CC) ia  (_     i   // avoid esdrúixoles
 ?6   L05C)  ie  (s_    i   // avoid esdrúixoles
@@ -647,7 +658,8 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 ?5    _) l (As_+   l
 ?5       ls        lts
 ?5       ll (K     l    // despalatalització final de paraula o de síl·laba
-?5       ll (sK    lt    // despalatalització + africatz final de paraula o de síl·laba
+?5       ll (sK    lt   // despalatalització + africatz final de paraula o de síl·laba
+?5    a) ll (otj   l   // (allotjar i derivats)
 
 //?5       ll (_A    l^   // (coll avall)
 .group m
@@ -815,6 +827,8 @@ _macro) i (@       i    // prefix: not glide (macroilla)
      t) o (r_      o2   // (pantocràtor)
      t) o (rs_     o2   // (pantocràtors)
         ou         O2w  // (mou)
+?5      ou (_      O2u  // (mou)
+?5      ou (s_     O2u  // (mou)
 ?6      ou         o2w  // (mou)
      f) o (s       o    // (fos, fosca, fosa, etc.)
      f) o (sf      O    // (fosfo...)
@@ -1230,6 +1244,8 @@ _contra) r (i      **   // (contrari)
 ?3      uig        udZ  // (rebuig)
         
 L05Ji)  u (s_      u    // not a glide (Màrius)
+?5   A) u (_       u
+?5   A) u (s_      u
 
             // prefixes with secondary stress
    _p)  u (ig      ,u    // (puigmal)
@@ -1287,6 +1303,23 @@ L05Ji)  u (s_      u    // not a glide (Màrius)
 ?4   ç_) x         tS   // (llaç xamós)
 ?4 Aig_) x         tS
 ?4 Atx_) x         tS
+
+?5       x         z   // (taxi)
+?5   _e) x  (A     z   // (examen)
+?5 _coe) x  (A     z   // (coexistir)
+    
+?5   _è) x  (A     z   // (èxode)
+?5   _e) x  (L11   z   
+    
+?5   _A) x  (A     z   //
+?5   _o) x  (i     s   // (oxigen)
+?5 _parado) x      s   // (paradoxal)
+?5   _A) x  (L10   s   // unvoiced consonant (excampió) 
+?5   _A) xj        Z   // (exjutge)
+?5   _A) xg (L01   gZ   // (exgeneral)
+?5   _A) xs        s   // (exsecretari)
+?5       xc (L01   s   // (excedeix)
+
 
 ?6   t_) x         tS
      

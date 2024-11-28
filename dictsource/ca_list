@@ -222,6 +222,7 @@ _4X	kwa**'anta
 _5X	sinkw'anta
 _6X	seS'anta
 ?3 _6X	sejS'anta
+?5 _6X  SiS'anta
 ?6 _6X  SiS'anta
 _7X	set'anta
 _8X	bujt'anta
@@ -15789,6 +15790,7 @@ tens     t'ens   $verb
 ?4 joan     Zu'an
 ?4 home     'Omo
 ?4 cotxe    k'otSo
+
 ?5 de       $u de2 
 ?5 on       ond
 ?5 quan     quand
@@ -15802,7 +15804,16 @@ tens     t'ens   $verb
 ?5 estiu    ist'iw
 ?5 amb      ama
 ?5 so       s'o
+?5 seixanta siS'anta
+?5 seixanta siS'anta
+?5 edat     id'at
+?5 càrrega  c'aRiga
+?5 càrregues  c'aRiges
+?5 llapis   l'apis
+?5 llista   l'ista
+?5 llistes  l'istes
 
+?6 seixanta siS'anta
 ?6 estiu    ist'iw
 ?6 aigua    aiga
 ?6 aigües   aiges
