@@ -116,6 +116,7 @@
 ?4 Atx_) c (L01    ts
 
 ?5       cc (L01   s    // (obstrucció)
+?5       c (s_     t    // (obstrucció)
 
 .group ç
         ç (_       =s    // (llaç)
@@ -305,16 +306,21 @@
 ?4      e (ga_+    @
 ?4      e (gues_+  @
 
-?5      eix (A+     S   // rule to control e elision when unestressed #20 nov - editat per eliminar j
+?5      eix (A+     eS   // rule to control e elision when unestressed #20 nov - editat per eliminar j
 ?5      eix (en_+   eS   // rule to control e elision when unestressed
 ?5      e (t       E    // (barrufet)
 ?5  _d) e (cid     i
 ?5  ll) eu (ger    u
 ?5   _) e          e2
+?5   _) e (n       e
+?5      e (t       e    // (barrufet)
+
 ?5  _t) e (le      e2
 
 ?6      eiem (_    i'em
 ?6      eieu (_    i'eu
+?6 Abl) e    (_    e2  // (possible)
+?6 Abl) e    (s_   e2  // (possible)
 
     // prefixes with secondary stress
      _) e (ntreA   ,e   // (entreacte)
@@ -468,8 +474,10 @@
    _l)  i (_ho_    i    // no glide (li ho porta)
    _l)  i (_A      j    // glide (li amaga)
     _)  i (_A      j    // glide (i altres)
+?5  _)  i (_A      i    // glide (i altres)
     K)  i (_u+     i    // no glide 
    A_)  i (_       j    // glide (faré i desfaré)
+?5 A_)  i (_       i    // glide (faré i desfaré)
     
  'i_)  i  (K++          // following and stressed i -> elision (matí incomplet)
     
@@ -680,14 +688,15 @@ _macro) i (@       i    // prefix: not glide (macroilla)
         mp (_C     m    // do not pronounce final p
         mb (K      m    // do not pronounce final b (amb mi) or before consonant
         mpt        mt   // do not pronouce p between m and t (compte)
-
+//REVISAR ?5   e) m (_       n    // (passejàvem)
     // accent variants     
 ?3 _a)  mb (_A     m    // pronounce "am" before vowel (amb ell)
 ?3 _a)  mb (_C     n    // pronounce "an" before consonant (amb tu)
 ?3      mp (_      mp   // do pronounce final p (valencian)
 ?4      mp (_      mp   // do pronounce final p (balearic)
 ?4      mpls (_    ms   // do pronounce final p (balearic)
-?5      mp (s      nt    // do not pronounce final p
+// ?5      mp (s      nt    
+?5      m  (s      nt    // 
 
     // adverbs
     @) ment (_S4t  m''en
@@ -731,7 +740,9 @@ _macro) i (@       i    // prefix: not glide (macroilla)
         ntm        mm	 // (recentment)
         ntb        mb   // (avantbraç)
         ntp        mb   // (avantpassat)
-        nts        ns   // (avantsala)
+?1        nts        ns   // (avantsala)
+?2        nts        ns   // (avantsala)
+
         ntg        ng   // (avantguarda)
     tra) n (scend       // (transcendència)
         
@@ -783,7 +794,7 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 ?5      nt (s_      =nt   // (alt)
 ?5      nt (s_A     =nt   // (alt)
 ?5      nt (s_hA    =nt   // (alt)
-?5      nt (s_C     =n    // (alt)
+?5      nt (s_C     =nt   // (alt)
 ?5      nd (s_      =nd   // (alt)
 ?5      nd (s_A     =nd   // (alt)
 ?5      nd (s_hA    =nd   // (alt)
@@ -800,8 +811,10 @@ _macro) i (@       i    // prefix: not glide (macroilla)
 
 ?5      ny (K      n    // despalatalització final de paraula o de síl·laba
 ?5      ny (_A     nl^  // (any avall)
+?5      ny (s_     nt   // (anys)
+?5   A) ny (A       // (minyoneta)
 
-?6      ns (_      s    // camins
+?6      ns (_      =s   // do not pronounce n + stress the vowel (camins)
           
             // sant, cent, vint
   _L25) nt (_A     nt   // pronounce final t if followed by a vowel
@@ -1216,7 +1229,7 @@ _contra) r (i      **   // (contrari)
 ?3      tll        l^   // assimilation (espatlla)
 ?3      tl         ll   // ametla, atlas
 ?4      tll        ll   // assimilation (espatlla)
-?5      tll (++    tl   // (espatlla)
+?5      tll (++    l    // (espatlla)
         
         tm         mm	// gemination (setmana)
    _so) tm         dm   // avoid gemination (sotmès)
@@ -1437,6 +1450,9 @@ L05Ji)  u (s_      u    // not a glide (Màrius)
 ?6       ò (CCica_   o   // avoid esdrúixoles
 ?6       ò (CCics_   o   // avoid esdrúixoles
 ?6       ò (CCiques_ o   // avoid esdrúixoles
+?6       ò (fil_     o   // avoid esdrúixoles
+?6       ò (fils_    o   // avoid esdrúixoles
+
 
 .group '
          'n (_S2t    n

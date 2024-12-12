@@ -719,6 +719,7 @@ sta $hasdot	    s'anta	$dot
 // 1.4.1 Pronouns
 jo          Z'O         $verbf
 ?2 jo       j'O         $verbf
+?5 jo       j'O         $verbf
 tu          t'u         $verbf
 ell         'el^        $verbf
 ella        'el^a       $verbf
@@ -766,6 +767,8 @@ teues       t'ewes      $nounf
 seues       s'ewes      $nounf
 nostres     n'Ost**es   $nounf
 vostres     v'Ost**es   $nounf
+llur        l^u**       $nounf
+llurs       l^u**s      $nounf
 
 mon         mon  $u     $nounf
 ?4 mon      mun  $u     $nounf
@@ -823,9 +826,13 @@ als	$u $nounf
 de	$u
 del	$u  $nounf
 dels	$u $nounf
+?5 del	de2l    $u  $nounf
+?5 dels	de2ls   $u $nounf
 en      $u 
 ?2  en  e2n $u
 per	$u  pe**
+?5 per	$u  pe2
+?5 (per a)	pe**||a
 pel	$u $nounf
 pels	$u $nounf
 ans $u
@@ -833,9 +840,11 @@ des des
 ?4  des $u
 ?4  pes $u pedz 
 
-amb $u	
-?6 amb  ambe
+amb $u
+?5 amb  am'a
+?6 amb  ambe2
 entre	
+?5 com  cO2m
 
 // 1.4.4 Conjunctions
 i $u  
@@ -6554,8 +6563,6 @@ llars	$alt4
 llavors	$alt4
 llor	$alt4
 llors	$alt4
-llur	$alt4
-llurs	$alt4
 lord	$alt4
 lumbar	$alt4
 lumbars	$alt4
@@ -15793,7 +15800,7 @@ tens     t'ens   $verb
 
 ?5 de       $u de2 
 ?5 on       ond
-?5 quan     quand
+?5 quan     kwand
 ?5 que      ke2
 ?5 pels     pe2s
 ?5 dels     de2s
@@ -15802,7 +15809,6 @@ tens     t'ens   $verb
 ?5 llenya   N'eNa
 ?5 enlloc   eN'Ok
 ?5 estiu    ist'iw
-?5 amb      ama
 ?5 so       s'o
 ?5 seixanta siS'anta
 ?5 seixanta siS'anta
@@ -15812,6 +15818,94 @@ tens     t'ens   $verb
 ?5 llapis   l'apis
 ?5 llista   l'ista
 ?5 llistes  l'istes
+?5 impressió imp**esi'o
+?5 impressions imp**esi'ons
+?5 òrbita   'O**bita
+?5 òrbites  'O**bites
+?5 com      c'om
+?5 dovere   dO2v'ErE2
+?5 doveres  dO2v'ErE2s
+?5 cadira      ka**'ia
+?5 cadires     ka**'ies
+?5 laboratori  labO2**at'O**i
+?5 laboratoris labO2**at'O**is
+?5 misteriós   miste2ri'os
+?5 misteriosa  miste2ri'osa
+?5 misteriosos miste2ri'osos
+?5 misterioses  miste2ri'oses
+?5 forment     f**um'ent
+?5 enginyer    andZin^'e
+?5 enginyera   andZin^'e**a
+?5 enginyers   andZin^'es
+?5 enginyeres  andZin^'e**es
+?5 esvilupat   azvilupat
+?5 esvilupats  azvilupats
+?5 algoritme   algo**itmO2
+?5 algoritmes  algo**itmO2s
+?5 felicitat   felisitat
+?5 felicitats  felisitats
+?5 exactament  E2zatam'ent
+?5 diuen       d'iun 
+?5 temor       tim'oR
+?5 temorós     timo**'os
+?5 temorosa    timo**'osa
+?5 temorosos   timo**'osos
+?5 temoroses   timo**'oses
+?5 inesperat   inEspE**at
+?5 inesperada  inEspE**a**a
+?5 inesperats  inEspE**ats
+?5 inesperades inEspE**a**as
+?5 vesteixen	vistiSen
+?5 vesteixes	vistiSes
+?5 vesteixin	vistiSin
+?5 vesteixis	vistiSis
+?5 vesteixi	vistiSi
+?5 vesteixo	vistiSo
+?5 vesteix	vist'iS
+?5 vestesc	vistesc
+?5 vestesqui	vistesqui
+?5 vestia	vistia
+?5 vestida	vistida
+?5 vestides	vistides
+?5 vestíem	vist'iem
+?5 vestien	vistien
+?5 vesties	visties
+?5 vestíeu	vist'ieu
+?5 vestim	vistim
+?5 vestint	vistint
+?5 vestiran	vistiran
+?5 vestiràs	vistir'as
+?5 vestira	vistira
+?5 vestirà	vistir'a
+?5 vestirem	vistirem
+?5 vestírem	vist'irem
+?5 vestiren	vistiren
+?5 vestires	vistires
+?5 vestireu	vistireu
+?5 vestíreu	vist'ireu
+?5 vestiré	vistir'e
+?5 vestiria	vistiria
+?5 vestiríem	vistir'iem
+?5 vestirien	vistirien
+?5 vestiries	vistiries
+?5 vestiríeu	vistir'ieu
+?5 vestir	vistir
+?5 vestisca	vistisca
+?5 vestisc	vistisc
+?5 vestisquen	vistisquen
+?5 vestisques	vistisques
+?5 vestíssim	vist'issim
+?5 vestissin	vistissin
+?5 vestissis	vistissis
+?5 vestíssiu	vist'issiu
+?5 vestís	vist'is
+?5 vestits	vistits
+?5 vestit	vistit
+?5 vestiu	vistiu
+?5 vestí	vist'i
+?5 vestixen	vistixen
+?5 vestixes	vistixes
+?5 vestix	vistix
 
 ?6 seixanta siS'anta
 ?6 estiu    ist'iw
@@ -15821,8 +15915,8 @@ tens     t'ens   $verb
 ?6 gaire    gwaj**es
 ?6 flor     flu
 ?6 flors    flus
-?6 hores    u**es
-?6 hora     u**a
+?6 hores    O**es
+?6 hora     O**a
 ?6 roig     RutS
 ?6 rojos    RuZos
 ?6 olla     ul^a
@@ -15854,7 +15948,7 @@ tens     t'ens   $verb
 ?6 esquaix  eskw'aS
 ?6 flaix    fl'aS
 ?6 haixix   aS'iS
-?6 beix     b'eS@
+?6 beix     b'eZ@
 ?6 biaix    bi'aS@
 ?6 brioix   b**i'oS@
 ?6 contrabaix   cont**ab'aS@
@@ -15957,7 +16051,6 @@ tens     t'ens   $verb
 ?6 magatzem     maQaz'in
 ?6 magatzems    maQaz'ins
 ?6 tèrbol       t'ERbo
-?6 menys        m'Enos
 ?6 ningú        ning'us
 ?6 caldre       calg'E
 ?6 príncep      p**'ince
@@ -16076,6 +16169,10 @@ tens     t'ens   $verb
 ?6 alta     n'alta
 ?6 alts     n'als
 ?6 altes    n'altes
+?5 enrere   end**'e**a
+?5 lavanya  lav'an^a
+?5 exercicis    e2ze2Rs'isiz
+?5 però     pE2**'o
 
 // 6.3 Other exceptions
 app         ap
