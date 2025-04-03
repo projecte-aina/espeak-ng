@@ -519,3 +519,9 @@ phoneme tS
   ENDIF
   WAV(ustop/tsh)
 endphoneme
+
+phoneme dz
+  CALL consonants/dz
+  voicingswitch ts
+  ipa dz
+endphoneme
